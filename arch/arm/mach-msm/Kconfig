@@ -397,6 +397,13 @@ config MACH_BRAVO
 		help
 			Select this to support the HTC Bravo device
 
+config MACH_INCREDIBLEC
+	depends on ARCH_QSD8X50
+	default n
+	bool "IncredibleC"
+	help
+	  Select this to support the IncredibleC device
+
 config MACH_PRIMODS
 		depends on ARCH_MSM7X27A
 		depends on !MSM_STACKED_MEMORY

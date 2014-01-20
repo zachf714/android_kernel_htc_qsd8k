@@ -341,6 +341,15 @@ obj-$(CONFIG_MACH_BRAVO) += board-bravo-microp.o htc_set_perflock.o
 obj-$(CONFIG_MACH_BRAVO) += board-bravo-tpa2018d1.o
 obj-$(CONFIG_MACH_BRAVO) += board-bravo-smb329.o
 
+obj-$(CONFIG_MACH_INCREDIBLEC) += board-incrediblec.o board-incrediblec-panel.o board-incrediblec-tv.o
+obj-$(CONFIG_MACH_INCREDIBLEC) += board-incrediblec-keypad.o board-incrediblec-mmc.o
+obj-$(CONFIG_MACH_INCREDIBLEC) += board-incrediblec-rfkill.o htc_wifi_nvs.o  board-incrediblec-audio.o
+obj-$(CONFIG_MACH_INCREDIBLEC) += board-incrediblec-wifi.o htc_awb_cal.o
+obj-$(CONFIG_MACH_INCREDIBLEC) += board-incrediblec-microp.o htc_bluetooth.o
+obj-$(CONFIG_MACH_INCREDIBLEC) += msm_vibrator.o
+obj-$(CONFIG_MACH_INCREDIBLEC) += proc_engineerid.o board-incrediblec-tpa6130.o
+obj-$(CONFIG_MACH_INCREDIBLEC) += htc_acoustic_qsd.o
+
 ifeq ($(CONFIG_ARCH_MSM8X60_LTE),y)
 obj-$(CONFIG_ARCH_MSM8X60_LTE) += 8x60-lte/
 else
